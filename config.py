@@ -1,1 +1,8 @@
-GROQ_API_KEY = "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"
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Retrieve the Groq API key from environment variables
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
